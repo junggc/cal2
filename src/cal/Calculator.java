@@ -23,19 +23,19 @@ public class Calculator {
         System.out.println("연산자를 입력하세요.");
         while(true) {
             Scanner yonsan = new Scanner(System.in);
-            try {
-                cal.setB(String.valueOf(yonsan.nextLine()));
+           // try {
+                cal.setB(yonsan.nextLine());
 
                 if(!cal.getB().equals("+")&&!cal.getB().equals("-")&&!cal.getB().equals("*")&&!cal.getB().equals("/")&&!cal.getB().equals("%")){
-                    System.out.println("정확한 연산자를 입력!");
+                  System.out.println("정확한 연산자를 입력!");
                     continue;
 
                 }
 
-            } catch (Exception e2) {
-                System.out.println("+,-,*,/.% 연산자를 입력하세요.");
-                continue;
-            }break;
+//            } catch (Exception e2) {
+//                System.out.println("+,-,*,/.% 연산자를 입력하세요.");
+//                continue;
+            break;
         }
         System.out.println("여기도 숫자만 입력하세요");
         while(true) {
@@ -44,7 +44,7 @@ public class Calculator {
                 cal.setC(Integer.parseInt(num_2.nextLine()));
 
             } catch (Exception e4) {
-                System.out.println("정확하게 숫자만 입력 하세요.");
+              System.out.println("정확하게 숫자만 입력 하세요.");
                 continue;
             }
             break;

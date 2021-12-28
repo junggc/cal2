@@ -24,7 +24,7 @@ public class Calculator2 {
             Scanner ww = new Scanner(System.in);
             try {
                 cc.setW(String.valueOf(ww.nextLine()));
-                if(!cc.getW().equals("+")&&!cc.getW().equals("-")&&!cc.getW().equals("*")&&!cc.getW().equals("/")&&!cc.getW().equals("%")){
+                if(!(cc.getW().equals("+")||cc.getW().equals("-")||cc.getW().equals("*")||cc.getW().equals("/")||cc.getW().equals("%"))){
                     System.out.println("정확한 연산자를 입력!");
                     continue;
                 }
