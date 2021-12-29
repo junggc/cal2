@@ -19,17 +19,14 @@ public class Calculator3 {
         System.out.println("연산자(+.-.*./.%)를 입력하세요");
         while(true) {
             Scanner f2 = new Scanner(System.in);
-            try {
+
                 cl.setT(String.valueOf(f2.nextLine()));
                 if(!(cl.getT().equals("+") || cl.getT().equals("-") || cl.getT().equals("*") || cl.getT().equals("/") || cl.getT().equals("%"))){
                     System.out.println("");
+                    System.out.println("정확한 연산자를 입력 하세요.");
                     continue;
                 }
-
-            } catch (Exception e2) {
-                System.out.println("정확한 연산자를 입력 하세요.");
-                continue;
-            }break;
+           break;
         }
 
         System.out.println("다음 숫자를 입력 하세요.");
