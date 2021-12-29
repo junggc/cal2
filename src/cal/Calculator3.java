@@ -39,17 +39,43 @@ public class Calculator3 {
                 continue;
             }break;
         }
-        if(cl.getT().equals("+")){
-            System.out.println("계산 결과는 "+ (cl.getS() + cl.getU()) + " 입니다.");
-        }else if(cl.getT().equals("-")){
-            System.out.println("계산 결과는 "+ (cl.getS() - cl.getU()) + " 입니다.");
-        }else if(cl.getT().equals("*")){
-            System.out.println("계산 결과는 "+ (cl.getS() * cl.getU()) + " 입니다.");
-        }else if(cl.getT().equals("/")){
-            System.out.println("계산 결과는 "+ (cl.getS() / cl.getU()) + " 입니다.");
-        }else if(cl.getT().equals("%")){
-            System.out.println("계산 결과는 "+ (cl.getS() % cl.getU()) + " 입니다.");
+
+        switch(cl.getT()){
+            case("+"):
+                System.out.println("계산결과 "+(cl.getS()+cl.getU()));
+                break;
+            case("-"):
+                System.out.println("계산결과 "+(cl.getS()-cl.getU()));
+                break;
+            case("*"):
+                System.out.println("계산결과 "+(cl.getS()*cl.getU()));
+                break;
+            case("/"):
+                System.out.println("계산결과 "+(cl.getS()/cl.getU()));
+                break;
+            case("%"):
+                System.out.println("계산결과 "+(cl.getS()%cl.getU()));
+                break;
         }
+
+
+
+
+
+
+
+
+//        if(cl.getT().equals("+")){
+//            System.out.println("계산 결과는 "+ (cl.getS() + cl.getU()) + " 입니다.");
+//        }else if(cl.getT().equals("-")){
+//            System.out.println("계산 결과는 "+ (cl.getS() - cl.getU()) + " 입니다.");
+//        }else if(cl.getT().equals("*")){
+//            System.out.println("계산 결과는 "+ (cl.getS() * cl.getU()) + " 입니다.");
+//        }else if(cl.getT().equals("/")){
+//            System.out.println("계산 결과는 "+ (cl.getS() / cl.getU()) + " 입니다.");
+//        }else if(cl.getT().equals("%")){
+//            System.out.println("계산 결과는 "+ (cl.getS() % cl.getU()) + " 입니다.");
+//        }
 
 
 
